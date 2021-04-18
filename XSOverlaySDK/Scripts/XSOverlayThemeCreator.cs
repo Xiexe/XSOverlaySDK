@@ -135,11 +135,9 @@ namespace XSOverlaySDK
                 AssetDatabase.CreateFolder($"Assets/ExportedThemes/{uiName}", ThemeName);
                 Debug.Log($"Created export folder for theme: {ThemeName}");
             }
-            else
-            {
-                string fullPathToTheme = $"{Application.dataPath}/ExportedThemes/{uiName}/{ThemeName}";
-                AssetBundleExporter.CreateExportAssetbundle(fullPathToTheme, targetUI, ThemeCreator);
-            }
+
+            string fullPathToTheme = $"{Application.dataPath}/ExportedThemes/{uiName}/{ThemeName}";
+            AssetBundleExporter.CreateExportAssetbundle(fullPathToTheme, targetUI, ThemeCreator);
         }
     }
 }
