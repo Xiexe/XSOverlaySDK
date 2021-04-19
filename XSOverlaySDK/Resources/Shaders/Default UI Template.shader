@@ -7,7 +7,10 @@
         //---
 
         //Built In Shader Parameters
+        [Space(16)]
         _ClockColor("Clock Color", Color) = (1,1,1,1)
+        _CurrentSystemTime("System Time", Vector) = (0,0,0,0)
+        _CurrentSystemDate("System Date", Vector) = (0,0,0,0)
         _CursorPositionVelocity("Cursor Pos Vel", Vector) = (0,0,0,0)
         _HMDPosition("HMD Pos", Vector) = (0,0,0,0)
         _HMDRotation("HMD Rot", Vector) = (0,0,0,0)
@@ -94,6 +97,8 @@
             float4 _MainTex_ST;
 
             float4 _ClockColor;
+            float4 _CurrentSystemTime;
+            float4 _CurrentSystemDate;
             float4 _CursorPositionVelocity;
             float4 _HMDPosition;
             float4 _HMDRotation;
